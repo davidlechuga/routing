@@ -1,9 +1,9 @@
 var map = L.map('map', {});
-
+// create a map
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
+// routinf controls
 var control = L.Routing
 	.control(
 		L.extend(window.lrmConfig, {
@@ -26,6 +26,7 @@ var control = L.Routing
 	)
 	.addTo(map);
 
+// draw options
 var options = {
 	position: 'topleft',
 	drawMarker: true,
