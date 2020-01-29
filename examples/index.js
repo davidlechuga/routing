@@ -1,9 +1,10 @@
-var map = L.map('map', {});
 // create a map
+var map = L.map('map', {});
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-// routinf controls
+
+// routing controls
 var control = L.Routing
 	.control(
 		L.extend(window.lrmConfig, {
@@ -38,7 +39,6 @@ var options = {
 	editMode: true,
 	removalMode: true
 };
-
 map.pm.addControls(options);
 
 // funcion to search our geoposition, through the bowser.
@@ -65,102 +65,162 @@ var geojson = {
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.15693014860153, 19.421660401938375 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.15693014860153, 19.421660401938375 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.15715277194977, 19.41530343472 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.15715277194977, 19.41530343472 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.16147649288176, 19.42919079699207 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.16147649288176, 19.42919079699207 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.15510088205338, 19.41145574246444 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.15510088205338, 19.41145574246444 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.166738986969, 19.406661810457003 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.166738986969, 19.406661810457003 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.15420234203339, 19.402872100875346 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.15420234203339, 19.402872100875346 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.13861334323882, 19.43371847817348 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.13861334323882, 19.43371847817348 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.17520672082901, 19.425267547722687 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.17520672082901, 19.425267547722687 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.14331793785095, 19.434340708291575 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.14331793785095, 19.434340708291575 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.13299947977066, 19.430976590230028 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.13299947977066, 19.430976590230028 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.1830575466156, 19.434199062620618 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.1830575466156, 19.434199062620618 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.20722424983978, 19.4408360413073 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.20722424983978, 19.4408360413073 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.119553565979, 19.471710610838137 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.119553565979, 19.471710610838137 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.2188811302185, 19.45487802240015 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.2188811302185, 19.45487802240015 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.20185983181, 19.439283053079183 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.20185983181, 19.439283053079183 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.13129091262817, 19.486296091491727 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.13129091262817, 19.486296091491727 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.10564363002777, 19.417873571581808 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.10564363002777, 19.417873571581808 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.15314018726349, 19.443168025040652 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.15314018726349, 19.443168025040652 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.20584827661514, 19.429461449637476 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.20584827661514, 19.429461449637476 ]
+			}
 		},
 		{
 			type: 'Feature',
 			properties: {},
-			geometry: { type: 'Point', coordinates: [ -99.20243382453918, 19.43922740827415 ] }
+			geometry: {
+				type: 'Point',
+				coordinates: [ -99.20243382453918, 19.43922740827415 ]
+			}
 		}
 	]
 };
